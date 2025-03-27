@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Four Paws</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ponomar&family=Sigmar&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        .fancy-font {
+            font-family: "Dancing Script", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .newspaper-font {
+            font-family: "Ponomar", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Sour Gummy', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-[#f8ccd2] py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="https://alfieterry.co.uk/examples/lia/">
+            <img src="https://alfieterry.co.uk/examples/lia/logo.png" alt="Logo" class="h-20">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="https://alfieterry.co.uk/examples/lia/" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">HOME</a>
+            <a href="https://alfieterry.co.uk/examples/lia/about/" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">ABOUT</a>
+            <a href="https://alfieterry.co.uk/examples/lia/contact/" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">CONTACT</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-button" class="text-gray-800 md:hidden text-3xl p-4" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 text-center">
+        <a href="/" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">HOME</a>
+        <a href="about" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">ABOUT</a>
+        <a href="contact" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">CONTACT</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="relative text-center py-12" style="background: url('https://alfieterry.co.uk/examples/lia/Dog7.jpg') no-repeat center center; background-size: cover;">
+    <div class="absolute inset-0 bg-white opacity-50"></div>
+    <div class="container mx-auto relative z-10">
+        <h1 class="text-9xl font-bold fancy-font">Contact</h1>
+        <h1 class="text-9xl font-bold newspaper-font">Four Paws</h1>
+        <p class="text-lg mt-2">Your trusted dog walking service</p>
+    </div>
+</section>
+
+    <!-- Contact Form -->
+
+        <section class="text-center py-12">
+            <div class="container mx-auto max-w-lg">
+                <h2 class="text-2xl font-bold">Contact Us</h2>
+                <form action="https://formsubmit.co/lia.paige@icloud.com" method="POST" class="bg-white shadow-lg rounded-lg p-8 mt-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+                    <input class="w-full p-2 border rounded mb-4" type="text" id="name" name="name" required />
+                    
+                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                    <input class="w-full p-2 border rounded mb-4" type="email" id="email" name="email" required />
+                    
+                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                    <textarea class="w-full p-2 border rounded mb-4" id="message" name="message" rows="4" required></textarea>
+                    
+                    <button class="bg-pink-300 hover:bg-pink-400 text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-[#f8ccd2] py-8">
+        <div class="container mx-auto text-center text-gray-800">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="mb-4">© 2025 Lia Clark. All rights reserved.</p>
+            <nav class="flex justify-center space-x-4">
+                <a class="text-gray-800 hover:text-gray-600" href="#">Privacy Policy</a>
+                <a class="text-gray-800 hover:text-gray-600" href="#">Terms of Service</a>
+                <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
