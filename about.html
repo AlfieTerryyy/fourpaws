@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Four Paws</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ponomar&family=Sigmar&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        .fancy-font {
+            font-family: "Dancing Script", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .newspaper-font {
+            font-family: "Ponomar", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Sour Gummy', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header -->
+<header class="bg-[#f8ccd2] py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="https://alfieterry.co.uk/examples/lia/">
+            <img src="assets/images/logo.png" alt="Logo" class="h-20">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="/" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">HOME</a>
+            <a href="about" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">ABOUT</a>
+            <a href="contact" class="text-gray-800 font-semibold px-4 py-2 rounded hover:bg-pink-300 hover:text-white transition duration-300">CONTACT</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-button" class="text-gray-800 md:hidden text-3xl p-4" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 text-center">
+        <a href="/" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">HOME</a>
+        <a href="about" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">ABOUT</a>
+        <a href="contact" class="bg-pink-300 text-white px-6 py-3 rounded hover:bg-pink-400 transition">CONTACT</a>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="relative text-center py-12" style="background: url('assets/images/Dog7.jpg') no-repeat center center; background-size: cover;">
+    <div class="absolute inset-0 bg-white opacity-50"></div>
+    <div class="container mx-auto relative z-10">
+        <h1 class="text-9xl font-bold fancy-font">About</h1>
+        <h1 class="text-9xl font-bold newspaper-font">Four Paws</h1>
+        <p class="text-lg mt-2">Your trusted dog walking service</p>
+    </div>
+</section>
+
+<!-- About Section -->
+
+<body class="bg-[#f8ccd2] flex items-center justify-center min-h-screen">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+                <div class="relative w-64 h-64 md:w-72 md:h-72">
+                    <img src="https://alfieterry.co.uk/examples/lia/lia.jpg" alt="lia" class="absolute inset-0 w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+          
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-4">Get to know me</h1>
+                <p class="text-lg leading-relaxed">
+                    Get to know me! My name is Lia, and I am the owner of Four Paws Dog Walking. I have been working with dogs since 2019 and hold qualifications in animal management, canine training and behavior, animal-assisted therapy, and canine first aid. Currently, I am pursuing a canine holistic health course, with plans to expand my knowledge through further studies. Although my professional journey with dogs began six years ago, my passion for them started at a very young age. I always knew my purpose was to be around dogs, and this feeling only deepened when I got my German Shepherd cross, Athena, at 19. Throughout my teenage years, I struggled with my mental health, but then Athena provided me with unconditional love, companionship, and the motivation to regain control of my life. She required a lot of attention and training, which strengthened our bond and fueled my passion even further. Now, at a happy and fulfilling stage in my life, I am dedicated to making a positive impact on every dog I meet. I wanted to create a business where the dogs’ needs always come first. Building strong connections with my clients and treating their dogs as if they were my own is incredibly important to me. It’s well known that dogs bring so many positive experiences into human lives—this is my start to returning the favor.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Contact Form -->
+<section class="text-center py-12">
+    <div class="container mx-auto max-w-lg">
+        <h2 class="text-2xl font-bold">Get in Touch</h2>
+        <form action="https://formsubmit.co/lia.paige@icloud.com" method="POST" class="bg-white shadow-lg rounded-lg p-8 mt-4">
+            <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+            <input class="w-full p-2 border rounded mb-4" type="text" id="name" name="name" required />
+            
+            <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+            <input class="w-full p-2 border rounded mb-4" type="email" id="email" name="email" required />
+            
+            <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+            <textarea class="w-full p-2 border rounded mb-4" id="message" name="message" rows="4" required></textarea>
+            
+            <button class="bg-pink-300 hover:bg-pink-400 text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#f8ccd2] py-8">
+    <div class="container mx-auto text-center text-gray-800">
+        <div class="flex justify-center space-x-4 mb-4">
+            <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-gray-800 hover:text-gray-600" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="mb-4">© 2025 Lia Clark. All rights reserved.</p>
+        <nav class="flex justify-center space-x-4">
+            <a class="text-gray-800 hover:text-gray-600" href="#">Privacy Policy</a>
+            <a class="text-gray-800 hover:text-gray-600" href="#">Terms of Service</a>
+            <a class="text-gray-800 hover:text-gray-600" href="#">Contact Us</a>
+        </nav>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
+</body>
+</html>
