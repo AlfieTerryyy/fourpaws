@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.bg-pink-300 {
+    background-color: #f8b3d1;
+}
+.bg-pink-100 {
+    background-color: #fce4e6;
+}
+.bg-gray-100 {
+    background-color: #f7fafc; 
+}
+.text-gray-800 {
+    color: #2d3748;
+}
+.text-white {
+    color: #ffffff;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.text-4xl {
+    font-size: 2.25rem;
+}
+.text-2xl {
+    font-size: 1.5rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.mb-4 {
+    margin-bottom: 1rem;
+}
+.mt-2 {
+    margin-top: 0.5rem;
+}
+.mb-8 {
+    margin-bottom: 2rem;
+}
+.max-w-lg {
+    max-width: 32rem;
+}
+.max-w-4xl {
+    max-width: 56rem;
+}
+.w-full {
+    width: 100%;
+}
+.h-auto {
+    height: auto;
+}
+.shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.hidden {
+    display: none;
+}
+.text-center {
+    text-align: center;
+}
+.hover\:bg-pink-400:hover {
+    background-color: #f472b6;
+}
+.focus\:outline-none:focus {
+    outline: none;
+}
+.focus\:shadow-outline:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+.appearance-none {
+    appearance: none;
+}
+.border {
+    border: 1px solid #e2e8f0;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.leading-tight {
+    line-height: 1.25;
+}
+.p-4 {
+    padding: 1rem;
+}
+.p-8 {
+    padding: 2rem;
+}
+.text-gray-700 {
+    color: #4a5568;
+}
+.text-gray-600 {
+    color: #718096;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-[#f8ccd2] {
+    background-color: #f8ccd2;
+}
+.bg-light-pink {
+    background-color: #fef3f1;
+}
+
+.grid {
+    display: grid;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gap-8 {
+    gap: 2rem;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.font-bold {
+    font-weight: 700;
+}
