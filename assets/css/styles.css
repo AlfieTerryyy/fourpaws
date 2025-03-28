@@ -159,3 +159,28 @@ body {
 .font-bold {
     font-weight: 700;
 }
+
+
+/* About Section */
+.page-about-align {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #faa0ac;
+}
+
+.page-about-align p {
+    margin: 10px 0;
+}
+
+.page-about-align a {
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.page-about-align a:hover {
+    text-decoration: underline;
+}
