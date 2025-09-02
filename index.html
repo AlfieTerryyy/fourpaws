@@ -182,43 +182,30 @@
     <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
     <p class="text-gray-500 mb-12">Have a question or want to work together? Drop me a message below.</p>
 
-    <form action="mailto:lia.paige@icloud.com" method="POST" class="grid grid-cols-1 gap-6 text-left">
-      <div>
-        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
-        <input type="text" id="name" name="name" required
-               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-      </div>
-
-      <div>
-        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-        <input type="email" id="email" name="email" required
-               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-      </div>
-
-      <div>
-        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-        <input type="subject" id="subject" name="subject" required
-               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
-      </div>
-        
-      <div>
-        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
-        <textarea id="message" name="message" rows="5" required
-                  class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
-      </div>
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAABiv60Rf67RU8-Fp"></div>
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-      <button type="submit"
-              class="w-full bg-pink-400 text-white font-semibold py-4 rounded-xl hover:bg-pink-500 transition duration-300 ease-in-out">
-        Send Message
-      </button>
-    </form>
+ <form action="mailto:lia.paige@icloud.com" method="POST" enctype="text/plain" class="grid grid-cols-1 gap-6 text-left">
+  <div>
+    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+    <input type="text" name="name" id="name" required
+      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
   </div>
-</section>
 
-<svg viewBox="0 0 1920 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-auto">
-  <path d="M0,160 C480,60 1440,260 1920,160 L1920,0 L0,0 Z" fill="#f8f9fa" />
-</svg>
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+    <input type="email" name="email" id="email" required
+      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+    <textarea name="message" id="message" rows="4" required
+      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"></textarea>
+  </div>
+
+  <button type="submit"
+    class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+    Send
+  </button>
+</form>
 
 
     
