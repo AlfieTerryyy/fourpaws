@@ -182,32 +182,79 @@
     <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
     <p class="text-gray-500 mb-12">Have a question or want to work together? Drop me a message below.</p>
 
- <form action="mailto:lia.paige@icloud.com" method="POST" enctype="text/plain" class="grid grid-cols-1 gap-6 text-left">
-  <div>
-    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-    <input type="text" name="name" id="name" required
-      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-  </div>
+    <form id="contactForm"
+          action="mailto:lia.paige@icloud.com"
+          method="POST"
+          enctype="text/plain"
+          class="grid grid-cols-1 gap-6 text-left">
 
-  <div>
-    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-    <input type="email" name="email" id="email" required
-      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm">
-  </div>
+      <div>
+        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+        <input type="text" id="name" name="name" required
+               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
 
-  <div>
-    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-    <textarea name="message" id="message" rows="4" required
-      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"></textarea>
-  </div>
+      <div>
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
 
-  <button type="submit"  
-          class="w-full bg-pink-400 text-white font-semibold py-4 rounded-xl hover:bg-pink-500 transition duration-300 ease-in-out">  
-    Send Message  
-  </button>  
-</form>
-</div>
+      <div>
+        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+        <input type="text" id="subject" name="subject" required
+               class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" required
+                  class="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-pink-400 text-white font-semibold py-4 rounded-xl hover:bg-pink-500 transition duration-300 ease-in-out">
+        Send Message
+      </button>
+    </form>
+  </div>
 </section>
+
+<script>
+  // make Subject actually set the email subject + format the body nicely
+  (function () {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      try {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim() || 'Website contact';
+        const message = document.getElementById('message').value.trim();
+
+        const bodyLines = [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          '',
+          message
+        ];
+        const body = bodyLines.join('\n');
+
+        const mailto = `mailto:lia.paige@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // open compose window
+        window.location.href = mailto;
+
+        // optional: also keep default behavior for some clients after a short delay
+        // setTimeout(() => form.submit(), 500);
+      } catch (err) {
+        // if anything goes wrong, fall back to normal mailto form post
+        form.submit();
+      }
+    });
+  })();
+</script>
     
     <!-- Footer -->
   
